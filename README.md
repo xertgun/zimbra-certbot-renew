@@ -25,6 +25,9 @@ An automated Bash-based utility to renew Let's Encrypt SSL certificates, verify 
   ```
 
 2. Edit the configuration parameters inside `zimbra-renew.sh`:
+  ```bash
+  sudo nano zimbra-renew.sh
+  ```
   ```text
   # Set to false for production live renewals
   TEST_MODE=true
