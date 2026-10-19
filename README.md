@@ -17,9 +17,9 @@ An automated Bash-based utility to renew Let's Encrypt SSL certificates, verify 
 
 ## 🚀 Quick Start
 
-1. Clone or download the script to your server scripts directory:
+1. Create the system directory and download the script:
   ```bash
-  mkdir -p /home/scripts && cd /home/scripts
+  sudo mkdir -p /opt/zimbra-renew && cd /opt/zimbra-renew
   wget https://raw.githubusercontent.com/xertgun/zimbra-certbot-renew/main/zimbra-renew.sh
   chmod +x zimbra-renew.sh
   ```
@@ -41,7 +41,7 @@ An automated Bash-based utility to renew Let's Encrypt SSL certificates, verify 
 
 4. Once verified, set `TEST_MODE=false` in the script and add it to your root crontab (`sudo crontab -e`) to automate renewals:
   ```cron
-  0 3 1 * * /home/scripts/zimbra-renew.sh >/dev/null 2>&1
+  0 3 1 * * /opt/zimbra-renew/zimbra-renew.sh >/dev/null 2>&1
   ```
 
 ## 💡 Why This Script Exists
